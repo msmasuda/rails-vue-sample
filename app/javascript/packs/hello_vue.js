@@ -33,19 +33,19 @@ document.addEventListener('DOMContentLoaded', () => {
 // </div>
 
 
-// import Vue from 'vue/dist/vue.esm'
-// import App from '../app.vue'
-//
-// document.addEventListener('DOMContentLoaded', () => {
-//   const app = new Vue({
-//     el: '#hello',
-//     data: {
-//       message: "Can you say hello?"
-//     },
-//     components: { App }
-//   })
-// })
-//
+import Vue from 'vue/dist/vue.esm'
+import App from '../app.vue'
+
+document.addEventListener('DOMContentLoaded', () => {
+  const app = new Vue({
+    el: '#hello',
+    data: {
+      message: "Can you say hello?"
+    },
+    components: { App }
+  })
+})
+
 //
 //
 // If the using turbolinks, install 'vue-turbolinks':
