@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   # devise_for :users
-  root to: 'about#index'
+  root to: 'home#index'
   resources :notes
 
   devise_for :users, controllers: {
