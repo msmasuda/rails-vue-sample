@@ -7,10 +7,21 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_pack_tag 'hello_vue.js' %>
   </head>
 
   <body>
+    <div class="session-control-box">
+      <% if signed_in? %>
+        <p><%= current_user.name %></p>
+        <%= link_to 'sign out', destroy_user_session_path, method: :delete %>
+      <% end %>
+    </div>
+    <div class="notice">
+      <%= notice %>
+    </div>
+    <div class="alert">
+      <%= alert %>
+    </div>
     <%= yield %>
   </body>
 </html>
