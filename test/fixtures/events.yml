@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  place: MyString
+  from_date: 2018-12-08 09:32:44
+  to_date: 2018-12-08 09:32:44
+  period: false
+  through_out: false
+  comment: MyText
+  user: one
+
+two:
+  name: MyString
+  place: MyString
+  from_date: 2018-12-08 09:32:44
+  to_date: 2018-12-08 09:32:44
+  period: false
+  through_out: false
+  comment: MyText
+  user: two

@@ -1,12 +1,6 @@
 <template>
-  <div id="hello">
+  <div id="event">
     <p>{{ message }}</p>
-    <v-alert
-      :value="true"
-      type="success"
-    >
-      This is a success alert.
-    </v-alert>
   </div>
 </template>
 
