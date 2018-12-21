@@ -8,23 +8,22 @@
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <link href="https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.min.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons' rel="stylesheet">
-    
-    <%= javascript_pack_tag 'application' %>
   </head>
-
   <body>
     <div class="session-control-box">
       <% if signed_in? %>
         <p><%= current_user.name %></p>
         <%= link_to 'sign out', destroy_user_session_path, method: :delete %>
+        <%= javascript_pack_tag 'application' %>
+      <% else %>
+        <div class="notice">
+          <%= notice %>
+        </div>
+        <div class="alert">
+          <%= alert %>
+        </div>
+        <%= yield %>
       <% end %>
     </div>
-    <div class="notice">
-      <%= notice %>
-    </div>
-    <div class="alert">
-      <%= alert %>
-    </div>
-    <%= yield %>
   </body>
 </html>

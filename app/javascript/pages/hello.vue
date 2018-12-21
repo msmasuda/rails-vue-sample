@@ -1,5 +1,5 @@
 <template>
-  <div id="hello">
+  <v-flex>
     <p>{{ message }}</p>
     <v-alert
       :value="true"
@@ -7,7 +7,7 @@
     >
       This is a success alert.
     </v-alert>
-  </div>
+  </v-flex>
 </template>
 
 <script>

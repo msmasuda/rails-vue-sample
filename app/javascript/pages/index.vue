@@ -1,7 +1,7 @@
 <template>
-  <div id="event">
+  <v-app>
     <p>{{ message }}</p>
-  </div>
+  </v-app>
 </template>
 
 <script>
